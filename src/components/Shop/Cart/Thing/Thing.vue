@@ -1,11 +1,12 @@
 <template>
     <div class="container mt-3 mb-3">
         <div class="row">
-            <div class="col-auto pt-2">
+            <div class="col pt-2">
                 {{item.name}}
             </div>
-            <div class="col pt-2">
+            <div class="col-auto pt-2">
                 x{{getAmountById(item.id)}}
+                total:
             </div>
             <div class="col-auto pt-2">
                 {{getCurrentPriceById(item.id)}}$

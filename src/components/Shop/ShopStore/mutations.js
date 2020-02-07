@@ -13,5 +13,23 @@ export default {
             }
         }
         return newState;
+    },
+
+    setRating(state, ratings){
+        for(let key in state.shoppingList){
+            state.shoppingList[key].rating = ratings[key];
+        }
+    },
+
+    setMostPopular(state){
+        let rating = state.shoppingList[0].rating;
+        let id = 0;
+        for(let key in state.shoppingList){
+            if(state.shoppingList[key].rating > rating){
+                rating = state.shoppingList[key].rating;
+                id = key;
+            }
+        }
+        state.shoppingList[id].mostPopular = true;
     }
 }

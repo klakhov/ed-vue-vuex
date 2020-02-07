@@ -4,6 +4,7 @@
             <div class="col pt-2">
                 {{item.name}}
             </div>
+            <div class="col-auto pt-2 badge-info" v-if="item.mostPopular">Most Popular</div>
             <div class="col-auto pt-2">
                 {{item.price}}$
             </div>
