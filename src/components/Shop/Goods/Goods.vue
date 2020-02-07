@@ -4,14 +4,14 @@
             List of goods
         </div>
         <div class="container">
-            <Thing v-for="(good, ind) in list" :key="ind" :name="good.name" :price="good.price"/>
+            <Thing v-for="(good, ind) in list" :key="ind" :item="good"/>
         </div>
     </div>
 </template>
 
 <script>
-    import Thing from "@/components/Shop/Thing/Thing";
-    import { mapState } from 'vuex'
+    import Thing from "@/components/Shop/Goods/Thing/Thing";
+    import { mapState} from 'vuex'
     export default {
         components:{
             Thing
@@ -19,7 +19,9 @@
         computed: {
             ...mapState({
                 list: 'shoppingList'
-            })
+            }),
+
+
         },
         mounted() {
         },
