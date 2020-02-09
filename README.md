@@ -1,24 +1,7 @@
 # ed-vue-vuex
 
-## Project setup
-```
-npm install
-```
+## About
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+this is jsut educational app with VueX tech
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## See it here https://s11as.github.io/ed-vue-vuex/
